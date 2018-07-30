@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.idl.musta.kotlinlearning.SecondActivity">
+    <item
+        android:id="@+id/action_activity"
+        android:orderInCategory="100"
+        android:title="@string/title_activity_drawer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_activity2"
+        android:orderInCategory="100"
+        android:title="@string/title_activity_bottom_nav"
+        app:showAsAction="never" />
+</menu>

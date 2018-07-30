@@ -19,7 +19,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"/>
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/title_activity_second"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.idl.musta.kotlinlearning.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DrawerActivity"
+            android:label="@string/title_activity_drawer"
+            android:parentActivityName=".SecondActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.idl.musta.kotlinlearning.SecondActivity" />
+        </activity>
+        <activity
+            android:name=".BottomNavActivity"
+            android:label="@string/title_activity_bottom_nav"
+            android:parentActivityName=".SecondActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.idl.musta.kotlinlearning.SecondActivity" />
+        </activity>
     </application>
 
 </manifest>
